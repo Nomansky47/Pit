@@ -34,9 +34,7 @@ namespace Pit
             _flight=_selectedFlight;
             DataContext = _selectedFlight;
             List<Tickets> tickets= 
-    
-    
-    .GetContext().Tickets.ToList();
+    PitContext.GetContext().Tickets.ToList();
             _aircrafts= PitContext.GetContext().Aircrafts.FirstOrDefault(p => p.AircraftID == _flight.AircraftID);
             Panel[] panels = new Panel[15] {Panel1,Panel2, Panel3, Panel4, Panel5, Panel6, Panel7, Panel8, Panel9,
             Panel10, Panel11, Panel12, Panel13, Panel14, Panel15};

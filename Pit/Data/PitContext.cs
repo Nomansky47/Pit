@@ -16,7 +16,7 @@ namespace Pit
         public virtual DbSet<Reserved> Reserved { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Visitors> Visitors { get; set; }
-        public static PitContext _context {get;set;}
+        private static PitContext _context {get;set;}
         public static PitContext GetContext()
         {
             if (_context == null)

@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Controls;
 
-namespace Pit
+namespace Pit.Data
 {
-    internal class Navigator
+    public static class UserData
     {
-        public static Frame MainFrame { get; set; }
+        public static int EmployeeID { get; set; }
     }
 }

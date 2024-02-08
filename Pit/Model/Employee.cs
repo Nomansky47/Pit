@@ -10,7 +10,7 @@ namespace Pit
     public partial class Employee
     {
         [Key]
-        public int UserID { get; set; }
+        public int EmployeeID { get; set; }
 
         [Required]
         [StringLength(255)]

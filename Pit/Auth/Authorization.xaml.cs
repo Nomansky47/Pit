@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pit.Data;
+using System;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -38,10 +39,10 @@ namespace Pit
                 }
                 if(user.isAdmin==false)
                 {
-                    Navigator.login=Login.Text;
+                        UserData.EmployeeID=user.EmployeeID;
                         Password.Password = "";
                         Login.Text = "";
-                   // Navigator.MainFrame.Navigate(new Show());
+                    Navigator.MainFrame.Navigate(new PlanePage());
                 }
                 }
             }

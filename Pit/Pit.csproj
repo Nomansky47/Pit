@@ -80,12 +80,13 @@
     <Compile Include="Admin\EditEmployee.xaml.cs">
       <DependentUpon>EditEmployee.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Data\UserData.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Main\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data\Navigator.cs" />
-    <Compile Include="Data\PitModel.cs" />
+    <Compile Include="Data\PitContext.cs" />
     <Compile Include="Auth\Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>

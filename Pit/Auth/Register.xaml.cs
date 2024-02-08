@@ -32,10 +32,7 @@ namespace Pit
                 _currentUser.Patronymic=ThirdName.Text.ToString();
                 var login= Login.Text.ToString();
                 _currentUser.Login = login;
-                if (login == "admin")
-                    _currentUser.isAdmin = true;
-                else
-                    _currentUser.isAdmin = false;
+                _currentUser.isAdmin = false;
                 var crypt = System.Security.Cryptography.SHA256.Create();
                 var final = crypt.ComputeHash(Encoding.UTF8.GetBytes(Password.Text.ToString()));
                 _currentUser.Password = Convert.ToBase64String(final);

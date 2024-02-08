@@ -26,6 +26,8 @@ namespace Pit
             _EditOrNot = EditOrNot;
             if (selected != null)
             {
+                Login.IsEnabled = false;
+                Password.IsEnabled = false;
                 _current = selected;
             }
             DataContext = _current;

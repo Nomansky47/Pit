@@ -23,11 +23,11 @@ namespace Pit
         }
         private void EditClick(object sender, RoutedEventArgs e)
         {
-         //   Navigator.MainFrame.Navigate(new EditEmployee((sender as Button).DataContext as Employee,false));
+            Navigator.MainFrame.Navigate(new EditEmployee((sender as Button).DataContext as Employee,false));
         }
         public void AddClick(object sender, RoutedEventArgs e)
         {
-           // Navigator.MainFrame.Navigate(new EditEmployee(null,true));
+            Navigator.MainFrame.Navigate(new EditEmployee(null,true));
         }
         private void DelClick(object sender, RoutedEventArgs e) 
         {
