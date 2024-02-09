@@ -17,18 +17,16 @@ using System.Windows.Shapes;
 namespace Pit
 {
     
-    public partial class EditEmployee : Page
+    public partial class EditReserved : Page
     {
-        private Employee _current = new Employee();
+        private Reserved _current = new Reserved();
         bool _EditOrNot;
-        public EditEmployee(Employee selected, bool EditOrNot)
+        public EditReserved(Reserved selected, bool EditOrNot)
         {
             InitializeComponent();
             _EditOrNot = EditOrNot;
             if (selected != null)
             {
-                Login.IsEnabled = false;
-                Password.IsEnabled = false;
                 _current = selected;
             }
             DataContext = _current;
@@ -37,8 +35,6 @@ namespace Pit
         private void Save(object sender, RoutedEventArgs e)
         {
             StringBuilder error = new StringBuilder();
-            if (string.IsNullOrEmpty(Patronymic.Text) || string.IsNullOrEmpty(Name.Text))
-                error.AppendLine("Ошибка ввода, данные не были введены");
             if (error.Length > 0)
             {
                 MessageBox.Show(error.ToString());

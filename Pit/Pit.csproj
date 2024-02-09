@@ -64,11 +64,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Admin\AdminReserved.xaml.cs">
+      <DependentUpon>AdminReserved.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminVisitors.xaml.cs">
+      <DependentUpon>AdminVisitors.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Admin\AdminEmployee.xaml.cs">
       <DependentUpon>AdminEmployee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditReserved.xaml.cs">
+      <DependentUpon>EditReserved.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditVisitors.xaml.cs">
+      <DependentUpon>EditVisitors.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -80,6 +92,7 @@
     <Compile Include="Admin\EditEmployee.xaml.cs">
       <DependentUpon>EditEmployee.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Data\EditData.cs" />
     <Compile Include="Data\UserData.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Main\MainWindow.xaml.cs">
@@ -125,11 +138,27 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Admin\AdminReserved.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Admin\AdminVisitors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Admin\AdminPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Admin\AdminEmployee.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Admin\EditReserved.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Admin\EditVisitors.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

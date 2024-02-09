@@ -21,8 +21,7 @@ namespace Pit
              MessageBox.Show("Данные не были введены"); 
             else
             {
-                var crypt = System.Security.Cryptography.SHA256.Create();
-                var notfinal = crypt.ComputeHash(Encoding.UTF8.GetBytes(Password.Password));
+                var notfinal = System.Security.Cryptography.SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(Password.Password));
                 var final = Convert.ToBase64String(notfinal);
                 Employee user = PitContext.GetContext().Employee.FirstOrDefault(p => p.Login == Login.Text&&p.Password==final);
                 if (user == null)

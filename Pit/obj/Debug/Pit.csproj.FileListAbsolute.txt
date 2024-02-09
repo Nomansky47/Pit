@@ -31,3 +31,11 @@ D:\GitHub\Pit\Pit\obj\Debug\Pit.csproj.CoreCompileInputs.cache
 D:\GitHub\Pit\Pit\obj\Debug\Pit.csproj.CopyComplete
 D:\GitHub\Pit\Pit\obj\Debug\Pit.exe
 D:\GitHub\Pit\Pit\obj\Debug\Pit.pdb
+D:\GitHub\Pit\Pit\obj\Debug\Admin\AdminReserved.baml
+D:\GitHub\Pit\Pit\obj\Debug\Admin\AdminReserved.g.cs
+D:\GitHub\Pit\Pit\obj\Debug\Admin\EditVisitors.baml
+D:\GitHub\Pit\Pit\obj\Debug\Admin\EditVisitors.g.cs
+D:\GitHub\Pit\Pit\obj\Debug\Admin\AdminVisitors.baml
+D:\GitHub\Pit\Pit\obj\Debug\Admin\AdminVisitors.g.cs
+D:\GitHub\Pit\Pit\obj\Debug\Admin\EditReserved.baml
+D:\GitHub\Pit\Pit\obj\Debug\Admin\EditReserved.g.cs

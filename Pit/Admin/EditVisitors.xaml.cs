@@ -17,18 +17,16 @@ using System.Windows.Shapes;
 namespace Pit
 {
     
-    public partial class EditEmployee : Page
+    public partial class EditVisitors : Page
     {
-        private Employee _current = new Employee();
+        private Visitors _current = new Visitors();
         bool _EditOrNot;
-        public EditEmployee(Employee selected, bool EditOrNot)
+        public EditVisitors(Visitors selected, bool EditOrNot)
         {
             InitializeComponent();
             _EditOrNot = EditOrNot;
             if (selected != null)
             {
-                Login.IsEnabled = false;
-                Password.IsEnabled = false;
                 _current = selected;
             }
             DataContext = _current;
@@ -46,7 +44,7 @@ namespace Pit
             }
             try
             {
-                EditData.Save(_current, _EditOrNot);
+                EditData.Save(_current,_EditOrNot);
             }
             catch (Exception ex)
             {

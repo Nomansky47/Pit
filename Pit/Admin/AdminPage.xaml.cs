@@ -24,7 +24,7 @@ namespace Pit
 
         private void ReservedShow(object sender, RoutedEventArgs e)
         {
-           // Navigator.MainFrame.Navigate(new AdminReserved());
+            Navigator.MainFrame.Navigate(new AdminReserved());
         }
 
         private void EmployeeShow(object sender, RoutedEventArgs e)
@@ -34,7 +34,7 @@ namespace Pit
 
         private void VisitorsShow(object sender, RoutedEventArgs e)
         {
-            //Navigator.MainFrame.Navigate(new AdminVisitors());
+            Navigator.MainFrame.Navigate(new AdminVisitors());
         }
     }
 }
