@@ -33,7 +33,7 @@ namespace Pit
                     PitContext.GetContext().Visitors.RemoveRange(Removing);
                     PitContext.GetContext().SaveChanges();
                     MessageBox.Show("Успешно удалено");
-                    MyGrid.ItemsSource = PitContext.GetContext().Employee.ToList();
+                    MyGrid.ItemsSource = PitContext.GetContext().Visitors.ToList();
                 }
                 catch(Exception ex)
                 {
