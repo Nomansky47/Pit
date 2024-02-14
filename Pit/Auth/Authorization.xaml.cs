@@ -41,7 +41,12 @@ namespace Pit
                         UserData.EmployeeID=user.EmployeeID;
                         Password.Password = "";
                         Login.Text = "";
-                    Navigator.MainFrame.Navigate(new PlanePage());
+                        Visitors visitor = new Visitors();
+                        visitor.Surname = "О";
+                        visitor.Name = "А";
+                        visitor.Patronymic = "ы";
+                        visitor.isBanned = false;
+;                    Navigator.MainFrame.Navigate(new SeatsPage(visitor));
                 }
                 }
             }

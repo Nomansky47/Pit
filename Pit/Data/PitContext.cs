@@ -1,6 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Data.Entity;
 using System.Linq;
 
 namespace Pit
@@ -8,8 +8,8 @@ namespace Pit
     public partial class PitContext : DbContext
     {
         public PitContext()
-            : base("name=PitModel")
         {
+            Database.EnsureCreated();
         }
 
         public virtual DbSet<Employee> Employee { get; set; }
@@ -23,44 +23,9 @@ namespace Pit
                 _context = new PitContext();
             return _context;
         }
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            modelBuilder.Entity<Employee>()
-                .Property(e => e.Login)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Employee>()
-                .Property(e => e.Password)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Employee>()
-                .Property(e => e.Surname)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Employee>()
-                .Property(e => e.Name)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Employee>()
-                .Property(e => e.Patronymic)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Visitors>()
-                .Property(e => e.Surname)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Visitors>()
-                .Property(e => e.Name)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Visitors>()
-                .Property(e => e.Patronymic)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Visitors>()
-                .HasMany(e => e.Reserved)
-                .WithRequired(e => e.Visitors)
-                .WillCascadeOnDelete(false);
+            options.UseNpgsql("Host=localhost;Port=5432;Database=PitBase;Username=postgres;Password=3110");
         }
     }
 }

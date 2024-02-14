@@ -9,5 +9,6 @@ namespace Pit.Data
     public static class UserData
     {
         public static int EmployeeID { get; set; }
+        public static int VisitorID { get; set; }
     }
 }
