@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\GitHub\Pit\Pit\App.xaml
-11-1468420720
+12-643136445
 
-24122666925
+251668914762
 491295775378
-Admin\AdminReserved.xaml;Admin\AdminVisitors.xaml;Admin\AdminPage.xaml;Admin\AdminEmployee.xaml;Admin\EditReserved.xaml;Admin\EditVisitors.xaml;Auth\Authorization.xaml;Admin\EditEmployee.xaml;Main\MainWindow.xaml;Main\SeatsPage.xaml;Auth\Register.xaml;
+Admin\AdminReserved.xaml;Admin\AdminVisitors.xaml;Admin\AdminPage.xaml;Admin\AdminEmployee.xaml;Admin\EditReserved.xaml;Admin\EditVisitors.xaml;Auth\Authorization.xaml;Admin\EditEmployee.xaml;Main\ChoosePage.xaml;Main\MainWindow.xaml;Main\SeatsPage.xaml;Auth\Register.xaml;
 
 True
 

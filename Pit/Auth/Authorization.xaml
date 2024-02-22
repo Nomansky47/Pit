@@ -9,7 +9,7 @@
       Title="Registration">
 
     <Grid Background="Gray" >
-        <TextBox Background="LightGray" HorizontalAlignment="Left" Height="46" Margin="181,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="328" x:Name="Login"/>
+        <TextBox Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" Height="46" Width="328" Margin="181,67,0,0" TextWrapping="Wrap"   x:Name="Login"/>
         <Button Background="LightGray" Content="Вход" HorizontalAlignment="Left"  Margin="536,118,0,0" VerticalAlignment="Top"  Click="Enter"/>
         <Button Background="LightGray" Content="Зарегестрироваться" HorizontalAlignment="Left" Margin="334,251,0,0" VerticalAlignment="Top"  Click="Register"/>
         <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Height="50" Margin="0,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="434"><Run Language="ru-ru" Text="Авторизация"/></TextBlock>

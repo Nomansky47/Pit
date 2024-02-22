@@ -8,6 +8,7 @@ namespace Pit
     
     public partial class SeatsPage : Page
     {
+        private int _visitorID;
         private void ButtonsAdd(int j,Panel panel, List<Reserved> Reserved)
         {
             for (int i = 1; i < 6; i++)
@@ -25,10 +26,10 @@ namespace Pit
                 panel.Children.Add(button); // добавление кнопки на панель
             }
         }
-        public SeatsPage(Visitors _selected)
+        public SeatsPage(int visitorID)
         {
             InitializeComponent(); 
-            DataContext = _selected;
+            _visitorID = visitorID;
             List<Reserved> Reserved= 
     PitContext.GetContext().Reserved.ToList();
             Panel[] panels = new Panel[15] {Panel1,Panel2, Panel3, Panel4, Panel5, Panel6, Panel7, Panel8, Panel9,
@@ -56,6 +57,7 @@ namespace Pit
                 Reserved.Row = int.Parse(button.Name[1].ToString() + button.Name[2]);
                 Reserved.Seat = int.Parse(button.Name[3].ToString());
             }
+            Reserved.VisitorID = _visitorID;
             PitContext.GetContext().Reserved.Add(Reserved);
             PitContext.GetContext().SaveChanges();
         }

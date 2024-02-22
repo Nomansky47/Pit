@@ -96,3 +96,5 @@ D:\GitHub\Pit\Pit\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\GitHub\Pit\Pit\bin\Debug\System.ValueTuple.xml
 D:\GitHub\Pit\Pit\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
 D:\GitHub\Pit\Pit\obj\Debug\Main\SeatsPage.baml
+D:\GitHub\Pit\Pit\obj\Debug\Main\ChoosePage.g.cs
+D:\GitHub\Pit\Pit\obj\Debug\Main\ChoosePage.baml

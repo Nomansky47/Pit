@@ -182,6 +182,9 @@
     </Compile>
     <Compile Include="Data\EditData.cs" />
     <Compile Include="Data\UserData.cs" />
+    <Compile Include="Main\ChoosePage.xaml.cs">
+      <DependentUpon>ChoosePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Main\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -257,6 +260,10 @@
     <Page Include="Admin\EditEmployee.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\ChoosePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Main\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

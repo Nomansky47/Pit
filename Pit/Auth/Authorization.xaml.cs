@@ -1,4 +1,5 @@
 ﻿using Pit.Data;
+using Pit.Main;
 using System;
 using System.Linq;
 using System.Text;
@@ -41,12 +42,7 @@ namespace Pit
                         UserData.EmployeeID=user.EmployeeID;
                         Password.Password = "";
                         Login.Text = "";
-                        Visitors visitor = new Visitors();
-                        visitor.Surname = "О";
-                        visitor.Name = "А";
-                        visitor.Patronymic = "ы";
-                        visitor.isBanned = false;
-;                    Navigator.MainFrame.Navigate(new SeatsPage(visitor));
+;                    Navigator.MainFrame.Navigate(new ChoosePage());
                 }
                 }
             }
